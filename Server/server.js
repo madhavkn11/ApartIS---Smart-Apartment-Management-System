@@ -8,7 +8,9 @@ const { Server } = require("socket.io")
 
 const app = express()
 const server = http.createServer(app)
-const JWT_SECRET = "jebfyuervf"
+require("dotenv").config();
+
+const JWT_SECRET = process.env.JWT_SECRET;
 
 // ─── Socket.io Setup ──────────────────────────────────────────
 const io = new Server(server, {
