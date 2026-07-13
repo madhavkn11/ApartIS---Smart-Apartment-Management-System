@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+Client/node_modules/
+Server/node_modules/
+
+# Build
+dist/
+Client/dist/
+Server/dist/
+
+# Environment
+.env
+Client/.env
+Server/.env
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
