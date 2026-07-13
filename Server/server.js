@@ -38,7 +38,7 @@ io.on("connection", (socket) => {
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect("mongodb://localhost:27017/apartmentiq")
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err))
 
